@@ -131,3 +131,21 @@ if c1 is c3:
     print('c1 and c3 are pointing to same object')
 else:
     print('c1 and c3 are pointing to different objects')
+
+#prob 18.4
+import builtins
+print(dir(builtins))
+print()
+print(vars(builtins))
+
+#prob 18.5
+def msg1():
+    print("hello my name is ahem")
+def msg2():
+    print("The CEO and Founder of The Starbase")
+d = vars()
+i = dir()
+print(sorted(d.keys()))
+print(i)
+print(d.keys() - i)
+print(i - d.keys())
